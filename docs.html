@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta id="meta-desc" name="description" content="Ben Eielson JROTC Website">
+		<meta id="meta-key" name="keywords" content="BEHS, eielson, jrotc, rotc, junior, reserve, officer, training, alaska, northstar, k12, official, website, home, main">
+		<meta id="meta-author" name="author" content="Cque Juan Leon Guerrero">
+		<meta id="meta-scale" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link id="meta-styles" rel="stylesheet" type="text/css" href="./styles.css">
+		<title>JROTC - Documents</title>
+		<link id="favicon" rel="icon" href="./favicon.ico" type="image/gif" sizes="16x16">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<base href="/jrotc/"></base>
+  <style>
+    #myInput {
+  background-image: url('./css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 20%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+  </style>
+</head>
+<body id="load-docs">
+		<noscript>
+			This site uses Javascript to control vital features -- Our service provider does not support serverside
+			commands. For this reason we are unable to provide dynamic content unless its by the means of being 
+			client-side only. Sorry for any inconveniences.
+		</noscript>
+</body>
+<script>
+$("#load-docs").load("./docs");
+</script>
