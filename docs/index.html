@@ -10,6 +10,59 @@
 		<title>JROTC - Documents</title>
 		<link id="favicon" rel="icon" href="/favicon.ico" type="image/gif" sizes="16x16">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta id="meta-desc" name="description" content="Free applications for Windows and Apple Mac operating systems">
+  <meta id="meta-key" name="keywords" content="cj2c">
+  <meta id="meta-author" name="author" content="CJ Leon Guerrero">
+  <meta id="meta-scale" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="meta-styles" rel="stylesheet" type="text/css" href="/styles.css">
+  <title>cj2c</title>
+  <link id="favicon" rel="icon" href="/favicon.ico" type="image/gif" sizes="16x16">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+    #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 20%;
+  font-size: 12px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="table-responsive">
+      <h1>Applications</h1>
+      <input type="text" id="myInput" onkeyup="filterApps(0)" placeholder="Search for names.." title="Type in a name"><br>
+      <button onclick="filterApps(0)">Name</button><button onclick="filterApps(1)">Developer</button><button onclick="filterApps(2)">Special Permission Required</button><button onclick="filterApps(4)">Operating System</button><button onclick="filterApps(5)">Latest Version</button>
+      <button onclick="filterApps(6)">Last Updated</button><button onclick="filterApps(7)">File Size </button><button onclick="filterApps(8)">Packages </button><button onclick="filterApps(9)">File Description</button>
+      <br />
+    </div>
+  </div>
+        <div id="load-apps">
+      </div>
+</body>
+
+</html>
+<script id="load-apps">
+$.("#load-apps").load("/scripts/applications.js");
+</script>
 	</head>
 	<body>
 		<div id="nav"></div>
