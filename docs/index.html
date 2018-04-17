@@ -46,6 +46,7 @@
 </head>
 
 <body>
+	<div id="nav"></div>
   <div class="container">
     <div class="table-responsive">
       <h1>Applications</h1>
@@ -55,17 +56,16 @@
       <br />
     </div>
   </div>
-        <div id="load-apps">
+        <div id="load-docs">
       </div>
-</body>
 
 </html>
 <script id="load-apps">
-$.("#load-apps").load("/scripts/applications.js");
+$.("#load-docs").load("/scripts/documents.js");
 </script>
-	</head>
-	<body>
-		<div id="nav"></div>
+
+	
+		
 		<noscript>
 			This site uses Javascript to control vital features -- Our service provider does not support serverside
 			commands. For this reason we are unable to provide dynamic content unless its by the means of being 
